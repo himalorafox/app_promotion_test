@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivAppLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAppLogo"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="#2b2b2b"
+        android:textSize="20sp"
+        tools:text="App Name" />
+
+    <TextView
+        android:id="@+id/tvAppDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppName"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="#616161"
+        android:textSize="16sp"
+        tools:text="App desc App desc App desc App desc App desc App desc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppDesc"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnPromotion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.5"
+            android:text="Download" />
+
+    </LinearLayout>
+</RelativeLayout>
